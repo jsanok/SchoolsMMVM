@@ -33,7 +33,7 @@ class _0180117_JS_NYCSchoolsTests: XCTestCase {
             XCTAssert(false, "Could not instantiate SchoolsViewController")
             return
         }
-        XCTAssert(vc.schools.count == 0, "schools array should be zero")
+        XCTAssert(vc.viewModel.schools.count == 0, "schools array should be zero")
     }
 
     func testGetSchoolListData() {
@@ -57,7 +57,7 @@ class _0180117_JS_NYCSchoolsTests: XCTestCase {
             XCTAssert(false, "Could not instantiate DetailsViewController")
             return
         }
-        XCTAssert(vc.satData.count == 0, "SAT data array should be zero")
+        XCTAssert(vc.viewModel.satData.count == 0, "SAT data array should be zero")
     }
     
     func testGetSATData() {

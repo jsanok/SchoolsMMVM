@@ -21,6 +21,9 @@
 		0709AC3E200FF56A009E4D89 /* SATDetailsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0709AC3D200FF56A009E4D89 /* SATDetailsData.swift */; };
 		0709AC40200FF664009E4D89 /* SchoolData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0709AC3F200FF664009E4D89 /* SchoolData.swift */; };
 		0709AC4220105A6F009E4D89 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0709AC4120105A6F009E4D89 /* Utils.swift */; };
+		075DD700201B82F5005396F4 /* SchoolsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075DD6FF201B82F5005396F4 /* SchoolsViewModel.swift */; };
+		075DD702201B89A9005396F4 /* DynamicBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075DD701201B89A9005396F4 /* DynamicBox.swift */; };
+		075DD704201D8F98005396F4 /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075DD703201D8F98005396F4 /* DetailsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,9 @@
 		0709AC3F200FF664009E4D89 /* SchoolData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolData.swift; sourceTree = "<group>"; };
 		0709AC4120105A6F009E4D89 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		0709AC4320110284009E4D89 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		075DD6FF201B82F5005396F4 /* SchoolsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolsViewModel.swift; sourceTree = "<group>"; };
+		075DD701201B89A9005396F4 /* DynamicBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicBox.swift; sourceTree = "<group>"; };
+		075DD703201D8F98005396F4 /* DetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,10 +101,11 @@
 			isa = PBXGroup;
 			children = (
 				0709AC4320110284009E4D89 /* README.md */,
+				0709AC31200F8BA9009E4D89 /* Models */,
+				0709AC3A200FCACC009E4D89 /* Views */,
+				075DD6FE201B817D005396F4 /* ViewModels */,
 				0709AC3C200FCAFD009E4D89 /* Gateways */,
 				0709AC3B200FCAD6009E4D89 /* Controllers */,
-				0709AC3A200FCACC009E4D89 /* Views */,
-				0709AC31200F8BA9009E4D89 /* Model */,
 				0709AC0F200F85A0009E4D89 /* AppDelegate.swift */,
 				0709AC13200F85A0009E4D89 /* Main.storyboard */,
 				0709AC16200F85A0009E4D89 /* Assets.xcassets */,
@@ -118,13 +125,13 @@
 			path = "20180117-JS-NYCSchoolsTests";
 			sourceTree = "<group>";
 		};
-		0709AC31200F8BA9009E4D89 /* Model */ = {
+		0709AC31200F8BA9009E4D89 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				0709AC32200F8BFE009E4D89 /* Schools.swift */,
 				0709AC36200FACE1009E4D89 /* SATData.swift */,
 			);
-			path = Model;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		0709AC3A200FCACC009E4D89 /* Views */ = {
@@ -152,6 +159,16 @@
 				0709AC3F200FF664009E4D89 /* SchoolData.swift */,
 			);
 			path = Gateways;
+			sourceTree = "<group>";
+		};
+		075DD6FE201B817D005396F4 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				075DD6FF201B82F5005396F4 /* SchoolsViewModel.swift */,
+				075DD703201D8F98005396F4 /* DetailsViewModel.swift */,
+				075DD701201B89A9005396F4 /* DynamicBox.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,10 +278,13 @@
 				0709AC12200F85A0009E4D89 /* SchoolsViewController.swift in Sources */,
 				0709AC35200F96B1009E4D89 /* SchoolsTableViewCell.swift in Sources */,
 				0709AC10200F85A0009E4D89 /* AppDelegate.swift in Sources */,
+				075DD704201D8F98005396F4 /* DetailsViewModel.swift in Sources */,
 				0709AC30200F88B8009E4D89 /* DetailsViewController.swift in Sources */,
 				0709AC4220105A6F009E4D89 /* Utils.swift in Sources */,
 				0709AC37200FACE1009E4D89 /* SATData.swift in Sources */,
+				075DD700201B82F5005396F4 /* SchoolsViewModel.swift in Sources */,
 				0709AC40200FF664009E4D89 /* SchoolData.swift in Sources */,
+				075DD702201B89A9005396F4 /* DynamicBox.swift in Sources */,
 				0709AC33200F8BFE009E4D89 /* Schools.swift in Sources */,
 				0709AC3E200FF56A009E4D89 /* SATDetailsData.swift in Sources */,
 			);
