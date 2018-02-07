@@ -28,7 +28,7 @@ class SATDetailsData  {
         request.httpMethod = "GET"
 
         // header
-        request.addValue(API.token.rawValue, forHTTPHeaderField: API.headerKey.rawValue)
+        request.addValue((URL.apiSettings?.token)!, forHTTPHeaderField: (URL.apiSettings?.headerKey)!)
 
         //task
         let task = session.dataTask(with: request, completionHandler: { (data: Data?, response: URLResponse?, error: Error?) -> Void in
