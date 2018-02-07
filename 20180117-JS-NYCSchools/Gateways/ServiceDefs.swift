@@ -37,9 +37,28 @@ extension URL {
     }
 }
 
-enum API:String {
-    case token = "pJlmGqS4VkIDpZlF3Y23bokV9"
-    case headerKey = "X-App-Token"
+struct APISettings: Decodable {
+    var token: String
+    var headerKey: String
+}
+
+extension URL {
+
+    var apiSettings:APISettings? {
+
+        if let filepath = Bundle.main.path(forResource: "api", ofType: "plist"){
+            let settingsURL: URL = URL(fileURLWithPath: filepath)
+            var settings: APISettings?
+
+            if let data = try? Data(contentsOf: settingsURL) {
+              let decoder = PropertyListDecoder()
+              settings = try? decoder.decode(APISettings.self, from: data)
+            }
+            return settings
+        }
+        return nil
+    }
+
 }
 
 enum EndPoint:String {

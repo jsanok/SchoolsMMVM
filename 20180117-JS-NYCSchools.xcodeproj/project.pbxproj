@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07060332202B49E800D33859 /* api.plist in Resources */ = {isa = PBXBuildFile; fileRef = 07060331202B49E800D33859 /* api.plist */; };
 		0709AC10200F85A0009E4D89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0709AC0F200F85A0009E4D89 /* AppDelegate.swift */; };
 		0709AC12200F85A0009E4D89 /* SchoolsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0709AC11200F85A0009E4D89 /* SchoolsViewController.swift */; };
 		0709AC15200F85A0009E4D89 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0709AC13200F85A0009E4D89 /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07060331202B49E800D33859 /* api.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = api.plist; sourceTree = "<group>"; };
 		0709AC0C200F85A0009E4D89 /* 20180117-JS-NYCSchools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "20180117-JS-NYCSchools.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0709AC0F200F85A0009E4D89 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0709AC11200F85A0009E4D89 /* SchoolsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolsViewController.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				0709AC18200F85A0009E4D89 /* LaunchScreen.storyboard */,
 				0709AC1B200F85A0009E4D89 /* Info.plist */,
 				0709AC4120105A6F009E4D89 /* Utils.swift */,
+				07060331202B49E800D33859 /* api.plist */,
 			);
 			path = "20180117-JS-NYCSchools";
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0709AC1A200F85A0009E4D89 /* LaunchScreen.storyboard in Resources */,
+				07060332202B49E800D33859 /* api.plist in Resources */,
 				0709AC17200F85A0009E4D89 /* Assets.xcassets in Resources */,
 				0709AC15200F85A0009E4D89 /* Main.storyboard in Resources */,
 			);
